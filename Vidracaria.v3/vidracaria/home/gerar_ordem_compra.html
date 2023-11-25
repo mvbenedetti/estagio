@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/gerar_ordem_compra.css">
+    <title>Ordem de Compra</title>
+</head>
+<body>
+    <div class="gerar_ordem_compra">
+        <form id="gerar_order_compra_form" method="POST">
+            <h2>Ordem de Compra</h2>
+            <label for="data-ordem">Data</label>
+            <input type="date" id="data-ordem" name="data-ordem" required>
+            <label for="fornecedor">Fornecedor:</label>
+            <select id="fornecedor" name="fornecedor">Fornecedor:</select>
+            <label for="produto">Produto:</label>
+            <select id="produto" name="produto">Produto:</select>
+            <label for="qtdProduto">Quantidade do Produto:</label>
+            <input type="number" id="qtdProduto" name="qtdProduto" required>
+            <button type="submit">Enviar</button>
+            <button type="button" id="consult-button">Consultar</button>
+            <button type="button" id="back-button">Voltar</button>
+        </form>
+    </div>
+    <script src="../js/gerar_ordem_compra.js"></script>
+</body>
+</html>
