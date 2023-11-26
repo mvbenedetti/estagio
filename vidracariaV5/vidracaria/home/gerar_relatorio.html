@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/gerar_relatorio.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <title>Relatórios</title>
+</head>
+<body>
+    <div class="gerar_relatorio">
+        <form id="gerar_relatorio_form" method="POST">
+            <h2>Relatórios</h2>
+            <label for="data-inicio">Data Início:</label>
+            <input type="date" id="data-inicio" name="data-inicio" required>
+            <label for="data-fim">Data Fim:</label>
+            <input type="date" id="data-fim" name="data-fim" required>
+            <label for="tipo">Tipo:</label> 
+            <select id="tipo_relatorio" name="tipo-relatorio" required>
+                <option value="orcamento">Orçamento</option>
+                <option value="ordem-compra">Ordem de Compra</option>
+                <option value="fornecedor">Fornecedor</option>  
+            </select>
+            <br>
+            <button type="submit">Concluir</button>
+            <button type="button" id="back-button">Voltar</button>
+        </form>
+    </div>
+    <script src="../js/gerar_relatorio.js"></script>
+</body>
+</html>
