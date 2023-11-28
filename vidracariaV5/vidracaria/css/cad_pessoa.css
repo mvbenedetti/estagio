@@ -5,7 +5,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh; /* Defina uma altura mínima para garantir que o conteúdo seja centralizado verticalmente */
 }
 
 #back-button {
@@ -58,4 +58,12 @@ button[type="submit"]:hover {
     margin-top: 20px; 
     padding: 10px;
     border: 1px solid #000000; 
+}
+
+/* Adicione uma consulta de mídia para responsividade */
+@media (max-width: 768px) {
+    #back-button,
+    form {
+        width: 90%; /* Ajuste a largura conforme necessário */
+    }
 }

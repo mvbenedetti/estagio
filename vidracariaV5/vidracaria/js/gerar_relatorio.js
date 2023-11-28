@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const concluirButton = document.querySelector("#gerar_relatorio_form button[type='submit']");
+    const concluirButton = document.querySelector("gerar-button");
 
     concluirButton.addEventListener("click", function (event) {
         event.preventDefault();
         const dataInicio = document.getElementById("data-inicio").value;
         const dataFim = document.getElementById("data-fim").value;
-        const tipoRelatorio = document.getElementById("tipo_relatorio").value;
+        const tipoRelatorio = document.getElementById("tipo-relatorio").value;
         const url = `gerar_relatorio.php?dataInicio=${dataInicio}&dataFim=${dataFim}&tipoRelatorio=${tipoRelatorio}`;
         fetch(url)
             .then(response => response.json())
