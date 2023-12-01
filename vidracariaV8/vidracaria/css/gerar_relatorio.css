@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.gerar_relatorio {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input:focus, select:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#back-button, #buttons button {
+    background-color: #6c757d;
+   
+}
+
+#back-button:hover, #buttons button:hover {
+    background-color: #5a6268;
+}
+/* Estilos existentes */
+
+/* Estilos adicionais para as tabelas */
+#tabela-relatorio, 
+#tabela-relatorio-orcamento,
+#tabela-relatorio-ordem-compra,
+#tabela-relatorio-produtos {
+    width: 100%;
+    max-width: 800px; /* Ajuste conforme necessário */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    border-collapse: collapse;
+    overflow-x: auto; /* Para responsividade em telas menores */
+}
+
+#tabela-relatorio table, 
+#tabela-relatorio-orcamento table,
+#tabela-relatorio-ordem-compra table,
+#tabela-relatorio-produtos table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, 
+table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f4f4f4;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #f1f1f1;
+}
+
+@media screen and (max-width: 600px) {
+    table, th, td {
+        font-size: 14px; /* Tamanho menor de fonte para telas pequenas */
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 5px;
+    }
+
+    .gerar_relatorio {
+        padding: 10px;
+    }
+
+    input, select, button {
+        padding: 8px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
